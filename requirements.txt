@@ -1,4 +1,11 @@
+# =======================================================
+# Note: redis==3.3.5 is incompatible with celery<4.2.2
+#   ** Restrict redis==2.10.6, when using celery<4.2.2
+# =======================================================
+
 celery==3.1.25
+# celery==4.3.0
 django==2.2.4
 djangorestframework==3.10.2
-redis==3.3.5
+redis==2.10.6
+# redis==3.3.5
